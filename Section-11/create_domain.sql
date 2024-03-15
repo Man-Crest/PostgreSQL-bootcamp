@@ -1,0 +1,14 @@
+
+CREATE DOMAIN addr VARCHAR(100) NOT NULL
+
+CREATE TABLE locations(
+    address addr 
+)
+
+select * from locations
+
+
+DROP DOMAIN locations -- IT DELETES ONLY DOMAIN
+
+DROP DOMAIN locations CASCADE -- IT DELETE RELATED TABLES ALSO THAT ARE USING THE DOMAIN
+
